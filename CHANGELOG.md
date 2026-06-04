@@ -10,6 +10,18 @@
   Fixed sub-headings, phrased from the user's point of view.
 -->
 
+## v1.2.3 — 2026-06-04
+### Changed
+- The example projects and device library are now installed into your
+  Documents folder (under *Varquon CYGVEUM*) the first time you run the app,
+  instead of being loaded from a temporary location. Installing a newer version
+  of the app refreshes them to that version's set.
+
+### Added
+- A setup window now appears while the examples and device library are being
+  installed, and progress windows are shown while they load or update, so you
+  can always see what the app is doing instead of it appearing to wait.
+
 ## v1.2.2 — 2026-06-04
 ### Fixed
 - "Update Device Library + Examples" now works for every example, including
