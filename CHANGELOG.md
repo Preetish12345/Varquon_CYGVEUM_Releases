@@ -1,5 +1,25 @@
 # Changelog
 
+<!--
+  AUDIENCE: end users of the app, NOT maintainers. This file is published as
+  the release notes users read. Write only changes a user can SEE or DO
+  differently — new/changed/fixed behaviour, features, examples, devices.
+  Do NOT mention code internals, refactors, file names, build/CI plumbing,
+  API/URL-encoding details, repo structure, or anything invisible in the app.
+  Each release adds one "## v<tag> — <date>" section with ### Added / Changed /
+  Fixed sub-headings, phrased from the user's point of view.
+-->
+
+## v1.2.2 — 2026-06-04
+### Fixed
+- "Update Device Library + Examples" now works for every example, including
+  ones whose names contain spaces (such as *Common-Source Amplifier*), which
+  previously failed to download.
+
+### Added
+- While an update runs, a window now shows its progress and what is currently
+  being downloaded, so it is clear the app is working rather than frozen.
+
 ## v1.2.1 — 2026-06-04
 ### Added
 - Four new example projects, each with its core circuit as an importable

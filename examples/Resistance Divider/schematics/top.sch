@@ -46,9 +46,9 @@
     },
     {
       "kind": "Pin",
-      "x": 5.0,
+      "x": 7.0,
       "y": 0.0,
-      "rotation": 0,
+      "rotation": 180,
       "mirrored": false,
       "name": "VOUT",
       "properties": {
@@ -99,17 +99,118 @@
       "y2": -6.0
     }
   ],
-  "labels": [
+  "labels": [],
+  "connections": [
     {
-      "net": "vin",
-      "x": -4.0,
-      "y": 0.0
+      "component_index": 0,
+      "kind": "SYM:divider",
+      "name": "X1",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -4.0,
+            0.0
+          ],
+          "wire_indices": [
+            0
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 1,
+          "world": [
+            0.0,
+            -4.0
+          ],
+          "wire_indices": [
+            2
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 2,
+          "world": [
+            4.0,
+            0.0
+          ],
+          "wire_indices": [
+            1
+          ],
+          "shared_with": []
+        }
+      ]
     },
     {
-      "net": "vout",
-      "x": 4.0,
-      "y": 0.0
+      "component_index": 1,
+      "kind": "Pin",
+      "name": "VIN",
+      "position": [
+        -7.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -6.0,
+            0.0
+          ],
+          "wire_indices": [
+            0
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 2,
+      "kind": "Pin",
+      "name": "VOUT",
+      "position": [
+        7.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            6.0,
+            0.0
+          ],
+          "wire_indices": [
+            1
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 3,
+      "kind": "Ground",
+      "name": "",
+      "position": [
+        0.0,
+        -7.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            0.0,
+            -6.0
+          ],
+          "wire_indices": [
+            2
+          ],
+          "shared_with": []
+        }
+      ]
     }
   ],
-  "connections": []
+  "parameters": ""
 }

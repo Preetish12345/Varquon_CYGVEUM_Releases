@@ -76,9 +76,9 @@
     },
     {
       "kind": "Pin",
-      "x": 2.0,
+      "x": 4.0,
       "y": -1.0,
-      "rotation": 0,
+      "rotation": 180,
       "mirrored": false,
       "name": "OUT",
       "properties": {
@@ -122,5 +122,129 @@
     }
   ],
   "labels": [],
-  "connections": []
+  "connections": [
+    {
+      "component_index": 0,
+      "kind": "NMOS",
+      "name": "Q1",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -1.0,
+            0.0
+          ],
+          "wire_indices": [
+            0
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 1,
+          "world": [
+            1.0,
+            -1.0
+          ],
+          "wire_indices": [
+            2,
+            3
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 2,
+          "world": [
+            1.0,
+            1.0
+          ],
+          "wire_indices": [
+            1
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 3,
+          "world": [
+            1.0,
+            0.0
+          ],
+          "wire_indices": [
+            3
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 1,
+      "kind": "Pin",
+      "name": "CTRL",
+      "position": [
+        -4.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -3.0,
+            0.0
+          ],
+          "wire_indices": [
+            0
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 2,
+      "kind": "Pin",
+      "name": "IN",
+      "position": [
+        0.0,
+        3.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            1.0,
+            3.0
+          ],
+          "wire_indices": [
+            1
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 3,
+      "kind": "Pin",
+      "name": "OUT",
+      "position": [
+        4.0,
+        -1.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            3.0,
+            -1.0
+          ],
+          "wire_indices": [
+            2
+          ],
+          "shared_with": []
+        }
+      ]
+    }
+  ],
+  "parameters": ""
 }

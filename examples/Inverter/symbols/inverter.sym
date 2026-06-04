@@ -74,9 +74,11 @@
       "y": 6.0,
       "rotation": 0,
       "mirrored": false,
-      "name": "P2_1",
+      "name": "INPUT",
       "properties": {
-        "external": ""
+        "external": "",
+        "order": "1",
+        "side": "left"
       },
       "nodes": [
         {
@@ -92,9 +94,11 @@
       "y": 0.0,
       "rotation": 90,
       "mirrored": false,
-      "name": "P3_1",
+      "name": "GND",
       "properties": {
-        "external": ""
+        "external": "",
+        "order": "1",
+        "side": "bottom"
       },
       "nodes": [
         {
@@ -110,9 +114,11 @@
       "y": 6.0,
       "rotation": 180,
       "mirrored": false,
-      "name": "P4_1",
+      "name": "OUTPUT",
       "properties": {
-        "external": ""
+        "external": "",
+        "order": "1",
+        "side": "right"
       },
       "nodes": [
         {
@@ -128,51 +134,17 @@
       "y": 12.0,
       "rotation": 270,
       "mirrored": false,
-      "name": "P1_1",
+      "name": "VDD",
       "properties": {
-        "external": ""
+        "external": "",
+        "order": "1",
+        "side": "top"
       },
       "nodes": [
         {
           "index": 0,
           "x": 7.0,
           "y": 11.0
-        }
-      ]
-    },
-    {
-      "kind": "Label",
-      "x": 7.0,
-      "y": 5.0,
-      "rotation": 0,
-      "mirrored": false,
-      "name": "out",
-      "properties": {
-        "net": "out"
-      },
-      "nodes": [
-        {
-          "index": 0,
-          "x": 6.0,
-          "y": 5.0
-        }
-      ]
-    },
-    {
-      "kind": "Label",
-      "x": 3.0,
-      "y": 5.0,
-      "rotation": 180,
-      "mirrored": false,
-      "name": "in",
-      "properties": {
-        "net": "in"
-      },
-      "nodes": [
-        {
-          "index": 0,
-          "x": 4.0,
-          "y": 5.0
         }
       ]
     }
@@ -239,18 +211,7 @@
       "y2": 8.0
     }
   ],
-  "labels": [
-    {
-      "net": "out",
-      "x": 6.0,
-      "y": 5.0
-    },
-    {
-      "net": "in",
-      "x": 4.0,
-      "y": 5.0
-    }
-  ],
+  "labels": [],
   "connections": [
     {
       "component_index": 0,
@@ -365,7 +326,7 @@
     {
       "component_index": 2,
       "kind": "Pin",
-      "name": "P2_1",
+      "name": "INPUT",
       "position": [
         3.0,
         6.0
@@ -387,7 +348,7 @@
     {
       "component_index": 3,
       "kind": "Pin",
-      "name": "P3_1",
+      "name": "GND",
       "position": [
         7.0,
         0.0
@@ -410,7 +371,7 @@
     {
       "component_index": 4,
       "kind": "Pin",
-      "name": "P4_1",
+      "name": "OUTPUT",
       "position": [
         7.0,
         6.0
@@ -432,7 +393,7 @@
     {
       "component_index": 5,
       "kind": "Pin",
-      "name": "P1_1",
+      "name": "VDD",
       "position": [
         7.0,
         12.0
@@ -451,54 +412,7 @@
           "shared_with": []
         }
       ]
-    },
-    {
-      "component_index": 6,
-      "kind": "Label",
-      "name": "out",
-      "position": [
-        7.0,
-        5.0
-      ],
-      "nodes": [
-        {
-          "index": 0,
-          "world": [
-            6.0,
-            5.0
-          ],
-          "wire_indices": [
-            9
-          ],
-          "shared_with": [],
-          "net": "out"
-        }
-      ],
-      "net": "out"
-    },
-    {
-      "component_index": 7,
-      "kind": "Label",
-      "name": "in",
-      "position": [
-        3.0,
-        5.0
-      ],
-      "nodes": [
-        {
-          "index": 0,
-          "world": [
-            4.0,
-            5.0
-          ],
-          "wire_indices": [
-            8
-          ],
-          "shared_with": [],
-          "net": "in"
-        }
-      ],
-      "net": "in"
     }
-  ]
+  ],
+  "parameters": ""
 }

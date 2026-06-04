@@ -68,9 +68,9 @@
     },
     {
       "kind": "Pin",
-      "x": -4.0,
-      "y": 2.0,
-      "rotation": 0,
+      "x": -3.0,
+      "y": 3.0,
+      "rotation": 270,
       "mirrored": false,
       "name": "VOUT",
       "properties": {
@@ -88,9 +88,9 @@
     },
     {
       "kind": "Pin",
-      "x": 1.0,
+      "x": 3.0,
       "y": 0.0,
-      "rotation": 0,
+      "rotation": 180,
       "mirrored": false,
       "name": "GND",
       "properties": {
@@ -134,5 +134,139 @@
     }
   ],
   "labels": [],
-  "connections": []
+  "connections": [
+    {
+      "component_index": 0,
+      "kind": "Pin",
+      "name": "VIN",
+      "position": [
+        -8.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -7.0,
+            0.0
+          ],
+          "wire_indices": [
+            0
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 1,
+      "kind": "Resistor",
+      "name": "R1",
+      "position": [
+        -5.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -6.0,
+            0.0
+          ],
+          "wire_indices": [
+            0
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 1,
+          "world": [
+            -4.0,
+            0.0
+          ],
+          "wire_indices": [
+            1
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 2,
+      "kind": "Resistor",
+      "name": "R2",
+      "position": [
+        -1.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -2.0,
+            0.0
+          ],
+          "wire_indices": [
+            1
+          ],
+          "shared_with": []
+        },
+        {
+          "index": 1,
+          "world": [
+            0.0,
+            0.0
+          ],
+          "wire_indices": [
+            3
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 3,
+      "kind": "Pin",
+      "name": "VOUT",
+      "position": [
+        -3.0,
+        3.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            -3.0,
+            2.0
+          ],
+          "wire_indices": [
+            2
+          ],
+          "shared_with": []
+        }
+      ]
+    },
+    {
+      "component_index": 4,
+      "kind": "Pin",
+      "name": "GND",
+      "position": [
+        3.0,
+        0.0
+      ],
+      "nodes": [
+        {
+          "index": 0,
+          "world": [
+            2.0,
+            0.0
+          ],
+          "wire_indices": [
+            3
+          ],
+          "shared_with": []
+        }
+      ]
+    }
+  ],
+  "parameters": ""
 }
