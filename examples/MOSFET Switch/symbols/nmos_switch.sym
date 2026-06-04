@@ -1,0 +1,126 @@
+{
+  "components": [
+    {
+      "kind": "NMOS",
+      "x": 0.0,
+      "y": 0.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "Q1",
+      "properties": {
+        "Width": "5u",
+        "Length": "0.15u"
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": -1.0,
+          "y": 0.0
+        },
+        {
+          "index": 1,
+          "x": 1.0,
+          "y": -1.0
+        },
+        {
+          "index": 2,
+          "x": 1.0,
+          "y": 1.0
+        },
+        {
+          "index": 3,
+          "x": 1.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "kind": "Pin",
+      "x": -4.0,
+      "y": 0.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "CTRL",
+      "properties": {
+        "side": "left",
+        "order": "2",
+        "external": ""
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": -3.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "kind": "Pin",
+      "x": 0.0,
+      "y": 3.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "IN",
+      "properties": {
+        "side": "left",
+        "order": "1",
+        "external": ""
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": 1.0,
+          "y": 3.0
+        }
+      ]
+    },
+    {
+      "kind": "Pin",
+      "x": 2.0,
+      "y": -1.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "OUT",
+      "properties": {
+        "side": "right",
+        "order": "1",
+        "external": ""
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": 3.0,
+          "y": -1.0
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "x1": -3.0,
+      "y1": 0.0,
+      "x2": -1.0,
+      "y2": 0.0
+    },
+    {
+      "x1": 1.0,
+      "y1": 3.0,
+      "x2": 1.0,
+      "y2": 1.0
+    },
+    {
+      "x1": 1.0,
+      "y1": -1.0,
+      "x2": 3.0,
+      "y2": -1.0
+    },
+    {
+      "x1": 1.0,
+      "y1": 0.0,
+      "x2": 1.0,
+      "y2": -1.0
+    }
+  ],
+  "labels": [],
+  "connections": []
+}

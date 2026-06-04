@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.2.1 — 2026-06-04
+### Added
+- Four new example projects, each with its core circuit as an importable
+  symbol: Resistance Divider, RC Filter (capacitor off-chip via external
+  pins), MOSFET Switch, and Common-Source Amplifier.
+
+### Changed
+- The blank `project_example` moved out of the bundled examples (it is a
+  developer template, no longer copied into users' example list).
+
 ## v1.2.0 — 2026-06-04
 ### Added
 - Symbol pins can now be named freely, and the name is drawn on the symbol

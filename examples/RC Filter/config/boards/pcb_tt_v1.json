@@ -1,0 +1,11 @@
+{
+    "pcb_name": "PCB_v1_tt",
+    "ic_onboard": "ic_tt_v1",
+    "num_external_pins": 4,
+    "external_pins": {
+        "ext_000": "EX_000",
+        "ext_001": "EX_001",
+        "ext_002": "EX_002",
+        "ext_003": "EX_003"
+    }
+}

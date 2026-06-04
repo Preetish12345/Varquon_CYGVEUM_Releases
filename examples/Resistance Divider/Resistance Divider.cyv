@@ -1,0 +1,7 @@
+{
+  "cygveum_project": true,
+  "version": 1,
+  "name": "Resistance Divider",
+  "top_schematic": "schematics\\top.sch",
+  "current_schematic": "top.sch"
+}

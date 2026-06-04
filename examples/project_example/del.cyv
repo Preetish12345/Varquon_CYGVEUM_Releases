@@ -1,7 +1,0 @@
-{
-  "cygveum_project": true,
-  "version": 1,
-  "name": "del",
-  "top_schematic": "schematics\\top.sch",
-  "current_schematic": "top.sch"
-}

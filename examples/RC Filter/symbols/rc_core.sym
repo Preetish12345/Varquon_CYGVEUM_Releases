@@ -1,0 +1,83 @@
+{
+  "components": [
+    {
+      "kind": "Pin",
+      "x": -4.0,
+      "y": 0.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "VIN",
+      "properties": {
+        "side": "left",
+        "order": "1",
+        "external": ""
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": -3.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "kind": "Resistor",
+      "x": 0.0,
+      "y": 0.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "R1",
+      "properties": {
+        "value": "2k"
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": -1.0,
+          "y": 0.0
+        },
+        {
+          "index": 1,
+          "x": 1.0,
+          "y": 0.0
+        }
+      ]
+    },
+    {
+      "kind": "Pin",
+      "x": 2.0,
+      "y": 0.0,
+      "rotation": 0,
+      "mirrored": false,
+      "name": "VOUT",
+      "properties": {
+        "side": "right",
+        "order": "1",
+        "external": ""
+      },
+      "nodes": [
+        {
+          "index": 0,
+          "x": 3.0,
+          "y": 0.0
+        }
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "x1": -3.0,
+      "y1": 0.0,
+      "x2": -1.0,
+      "y2": 0.0
+    },
+    {
+      "x1": 1.0,
+      "y1": 0.0,
+      "x2": 3.0,
+      "y2": 0.0
+    }
+  ],
+  "labels": [],
+  "connections": []
+}

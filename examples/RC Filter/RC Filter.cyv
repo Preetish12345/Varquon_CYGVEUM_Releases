@@ -1,0 +1,7 @@
+{
+  "cygveum_project": true,
+  "version": 1,
+  "name": "RC Filter",
+  "top_schematic": "schematics\\top.sch",
+  "current_schematic": "top.sch"
+}
