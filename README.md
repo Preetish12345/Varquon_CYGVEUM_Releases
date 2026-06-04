@@ -112,7 +112,7 @@ at any time.
 ```
    Schematic              Compile                Program
   ┌──────────┐          ┌──────────┐          ┌──────────┐
-  │  draw    │   ───▶   │  switch  │   ───▶   │  send to │
+  │  draw    │   ───▶   │  switch  │   ───▶  │  send to │
   │  circuit │          │  list    │          │  chip    │
   └──────────┘          └──────────┘          └──────────┘
    top.sch            switches.txt / out.hex     USB / serial
