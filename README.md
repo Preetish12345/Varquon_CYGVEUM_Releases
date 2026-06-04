@@ -91,7 +91,7 @@ instead of starting from a blank page.
    **Download ZIP**) and unzip it, or clone it with git. The
    [`examples/`](examples/) folder contains ready-made projects.
 2. **Open the app**, then **File ▸ Open Project...** and pick
-   [`examples/Inverter/Inverter.fpaa`](examples/Inverter/Inverter.fpaa).
+   [`examples/Inverter/Inverter.cyv`](examples/Inverter/Inverter.cyv).
 3. You'll see a CMOS **inverter** drawn in the schematic editor — an input
    pin, an output pin, and a logic-gate symbol between them.
 4. Press **Compile**. The app reports something like
@@ -109,13 +109,22 @@ Once that makes sense, try **File ▸ New Project...** to start your own.
 The app has three stages. You move left to right; you can go back and edit
 at any time.
 
-```
-   Schematic              Compile                Program
-  ┌──────────┐          ┌──────────┐          ┌──────────┐
-  │  draw    │   ───▶   │  switch  │   ───▶  │  send to │
-  │  circuit │          │  list    │          │  chip    │
-  └──────────┘          └──────────┘          └──────────┘
-   top.sch            switches.txt / out.hex     USB / serial
+```mermaid
+flowchart LR
+    S["<b>1 · Schematic</b><br/>Draw your analog circuit"]
+    C["<b>2 · Compile</b><br/>Map the circuit to chip switches"]
+    P["<b>3 · Program</b><br/>Send it to the chip over USB"]
+
+    S ==> C ==> P
+
+    S -.-> so(["📄 schematics/top.sch"])
+    C -.-> co(["📄 output/switches.txt<br/>📄 output/out.hex"])
+    P -.-> po(["✅ A real chip, reconfigured"])
+
+    classDef step fill:#1f6feb,stroke:#0d419d,stroke-width:2px,color:#ffffff;
+    classDef out fill:#f6f8fa,stroke:#d0d7de,color:#24292f;
+    class S,C,P step;
+    class so,co,po out;
 ```
 
 | Stage | What you do | What the app produces |
@@ -163,7 +172,7 @@ Inverter example, annotated:
 
 ```
 Inverter/
-├── Inverter.fpaa          ← the project file you open (double-click in the app)
+├── Inverter.cyv           ← the project file you open (double-click in the app)
 ├── schematics/
 │   └── top.sch            ← your circuit
 ├── symbols/
@@ -243,7 +252,7 @@ replug the device, then try again.
 
 **Can I move or rename a project folder?**
 Yes — the project is self-contained. Move the whole folder and open the
-`.fpaa` file inside it.
+`.cyv` file inside it.
 
 **Where do my compiled outputs go?**
 Into the project's `output/` folder: `switches.txt` (readable) and
